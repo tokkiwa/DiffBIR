@@ -129,7 +129,7 @@ with block:
         gr.Markdown("## DiffBIR")
     with gr.Row():
         with gr.Column():
-            input_image = gr.Image(source="upload", type="pil")
+            input_image = gr.Image(sources="upload", type="pil")
             run_button = gr.Button(label="Run")
             with gr.Accordion("Options", open=True):
                 num_samples = gr.Slider(label="Images", minimum=1, maximum=12, value=1, step=1)
